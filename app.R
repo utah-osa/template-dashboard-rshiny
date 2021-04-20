@@ -1,4 +1,8 @@
 library(shiny)
+library(bigrquery)
+
+# auth to bigquery
+bq_auth()
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
