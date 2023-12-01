@@ -1,50 +1,45 @@
-FROM rocker/shiny-verse:4.0.0
+FROM rocker/shiny-verse:4.2.0
 
-MAINTAINER Alexander Nielson "alexnielson@utah.gov"
+LABEL Alexander Nielson "alexnielson@utah.gov"
 
 # system libraries of general use
-RUN apt-get update && apt-get install -y \
-    sudo \
-    libcurl4-openssl-dev \
-    # libcurl4-gnutls-dev \
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    pandoc \
+    pandoc-citeproc \
+    libcurl4-gnutls-dev \
     libcairo2-dev \
     libxt-dev \
     libssl-dev \
     libssh2-1-dev \
-    build-essential \
-    libglpk40
+    libssl1.1 \
+    && rm -rf /var/lib/apt/lists/*
 
-# system library dependency for the webapp app
+# system library dependencies for the app. This is an example, you will need to
+# modify for your app!
 RUN apt-get update && apt-get install -y \
-    libmpfr-dev \
-    libgit2-dev \
-    libxml2-dev \
-    libudunits2-dev \
-    libpoppler-cpp-dev
-  
-RUN apt-get update -qq && apt-get -y --no-install-recommends install \
-  libsqlite-dev \
-  libmariadbd-dev \
-  libmariadbclient-dev \
-  libpq-dev \
-  libssh2-1-dev \
-  unixodbc-dev \
-  libsasl2-dev 
-  
- # Install the client libraries (only works fast for rocker >= 4.0.0 )
+    make \
+    zlib1g-dev \
+    libicu-dev \
+    libcurl4-openssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# install R packages. Below is an example, you will need to modify for your app!
 RUN install2.r --error \
     --deps TRUE \
     shiny \
-    bigrquery
-    
-# copy the app to the image srv directory
-COPY app.R /srv/shiny-server/app.R 
+    DT \
+    bigrquery \
+    data.table \
+    shinycssloaders \
+    shinyWidgets
 
-# overwrite  the shiny-customized.config to theetc/shiny-server directory
-COPY shiny-customized.config /etc/shiny-server/shiny-server.conf
+# copy the app to the image
+RUN mkdir /root/app
+COPY app /root/app
 
-EXPOSE 8080
 
-USER shiny
+COPY Rprofile.site /usr/local/lib/R/etc/
 
-CMD ["/usr/bin/shiny-server"]
+EXPOSE 3838
+
+CMD ["R", "-q", "-e", "shiny::runApp('/root/app')"]
