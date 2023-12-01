@@ -1,0 +1,2603 @@
+.hiveburger {
+	height: 76px;
+	width: 76px;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	border-style: none;
+	border-radius: 0;
+	cursor: pointer;
+	background: #525252;
+	overflow: hidden
+}
+
+.hiveburger svg {
+	height: 76px;
+	width: 76px;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer
+}
+
+.hiveburger__line {
+	fill: none;
+	stroke: #fff;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: 2px
+}
+
+.hiveburger #line3-1,
+.hiveburger #line3-2,
+.hiveburger #lineX1,
+.hiveburger #lineX2 {
+	display: none
+}
+
+@media (hover: hover),
+all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+	.hiveburger:hover {
+		background: #525252
+	}
+
+	.hiveburger:hover #line3-1,
+	.hiveburger:hover #line3-2 {
+		display: inherit
+	}
+
+	.hiveburger:hover #lineTop,
+	.hiveburger:hover #lineBottom1,
+	.hiveburger:hover #lineBottom2,
+	.hiveburger:hover #line2,
+	.hiveburger:hover #line1 {
+		display: none
+	}
+}
+
+.hiveburger.hiveburger--open #lineX1,
+.hiveburger.hiveburger--open #lineX2 {
+	display: inherit
+}
+
+.hiveburger.hiveburger--open #lineTop,
+.hiveburger.hiveburger--open #lineBottom1,
+.hiveburger.hiveburger--open #lineBottom2,
+.hiveburger.hiveburger--open #line2,
+.hiveburger.hiveburger--open #line1,
+.hiveburger.hiveburger--open #line3,
+.hiveburger.hiveburger--open #line3-1,
+.hiveburger.hiveburger--open #line3-2 {
+	display: none
+}
+
+.utah-gov-header.ut-size-small>.hiveburger {
+	height: 34px;
+	width: 45px
+}
+
+.utah-gov-header.ut-size-small>.hiveburger svg {
+	height: 34px;
+	width: 34px
+}
+
+.utah-gov-header.ut-size-small>.hiveburger .hiveburger__line {
+	stroke-width: 4px
+}
+
+.utah-gov-header.ut-size-medium>.hiveburger {
+	height: 50px;
+	width: 50px
+}
+
+.utah-gov-header.ut-size-medium>.hiveburger svg {
+	height: 50px;
+	width: 50px
+}
+
+.utah-gov-header.ut-size-medium>.hiveburger .hiveburger__line {
+	stroke-width: 3px
+}
+
+.utah-gov-header.ut-size-medium-large>.hiveburger {
+	height: 64px;
+	width: 64px
+}
+
+.utah-gov-header.ut-size-medium-large>.hiveburger svg {
+	height: 64px;
+	width: 64px
+}
+
+.utah-gov-header.ut-size-medium-large>.hiveburger .hiveburger__line {
+	stroke-width: 2.5px
+}
+
+.ut-color-yellow .hiveburger,
+.ut-color-yellow .hiveburger:hover {
+	background: #ECA400
+}
+
+.ut-color-green .hiveburger,
+.ut-color-green .hiveburger:hover {
+	background: #3C5E58
+}
+
+.ut-color-red .hiveburger,
+.ut-color-red .hiveburger:hover {
+	background: #9D3C25
+}
+
+.ut-color-blue .hiveburger,
+.ut-color-blue .hiveburger:hover {
+	background: #0062B8
+}
+
+.ut-color-dark .hiveburger,
+.ut-color-dark .hiveburger:hover {
+	background: #525252
+}
+
+.ut-color-yellow-dark .hiveburger,
+.ut-color-yellow-dark .hiveburger:hover {
+	background: #ECA400
+}
+
+.ut-color-green-dark .hiveburger,
+.ut-color-green-dark .hiveburger:hover {
+	background: #3C5E58
+}
+
+.ut-color-red-dark .hiveburger,
+.ut-color-red-dark .hiveburger:hover {
+	background: #C54C2F
+}
+
+.ut-color-blue-dark .hiveburger,
+.ut-color-blue-dark .hiveburger:hover {
+	background: #0062B8
+}
+
+@media only screen and (max-width: 849px) {
+	.hiveburger {
+		height: 50px;
+		width: 50px
+	}
+
+	.hiveburger svg {
+		height: 50px;
+		width: 50px
+	}
+
+	.hiveburger .hiveburger__line {
+		stroke-width: 3px
+	}
+
+	.utah-gov-header.ut-size-medium-large>.hiveburger {
+		height: 50px;
+		width: 50px
+	}
+
+	.utah-gov-header.ut-size-medium-large>.hiveburger svg {
+		height: 50px;
+		width: 50px
+	}
+
+	.utah-gov-header.ut-size-medium-large>.hiveburger .hiveburger__line {
+		stroke-width: 3px
+	}
+}
+
+.utah-gov-logo {
+	height: 58px;
+	width: 58px;
+	min-width: 58px;
+	padding: 0 14px;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+.utah-gov-logo svg {
+	height: 58px;
+	width: 58px
+}
+
+.utah-gov-logo__dot {
+	fill: #E6B42A
+}
+
+.utah-gov-logo__utah {
+	fill: #336276
+}
+
+.utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.utah-gov-logo__vert-line {
+	display: block;
+	height:100%;
+	/* height: calc(100% * .5); */
+	width: 2px;
+	min-width: 1px;
+	background-color: #385779
+}
+
+.utah-gov-header.ut-size-small>.utah-gov-logo {
+	height: 28px;
+	width: 28px;
+	min-width: 28px;
+	padding: 0 8px
+}
+
+.utah-gov-header.ut-size-small>.utah-gov-logo svg {
+	height: 28px;
+	width: 28px
+}
+
+.utah-gov-header.ut-size-medium>.utah-gov-logo {
+	height: 40px;
+	width: 40px;
+	min-width: 40px;
+	padding: 0 11px
+}
+
+.utah-gov-header.ut-size-medium>.utah-gov-logo svg {
+	height: 40px;
+	width: 40px
+}
+
+.utah-gov-header.ut-size-medium-large>.utah-gov-logo {
+	height: 50px;
+	width: 50px;
+	min-width: 50px;
+	padding: 0 11px
+}
+
+.utah-gov-header.ut-size-medium-large>.utah-gov-logo svg {
+	height: 50px;
+	width: 50px
+}
+
+.ut-color-yellow .utah-gov-logo__vert-line {
+	background: #00719E
+}
+
+.ut-color-green .utah-gov-logo__vert-line {
+	background: #00719E
+}
+
+.ut-color-red .utah-gov-logo__vert-line {
+	background: #00719E
+}
+
+.ut-color-blue .utah-gov-logo__vert-line {
+	background: #00719E
+}
+
+.ut-color-dark .utah-gov-logo__utah {
+	fill: white
+}
+
+.ut-color-dark .utah-gov-logo__gov {
+	fill: white
+}
+
+.ut-color-dark .utah-gov-logo__vert-line {
+	background: #fff
+}
+
+.ut-color-yellow-dark .utah-gov-logo__utah {
+	fill: white
+}
+
+.ut-color-yellow-dark .utah-gov-logo__gov {
+	fill: white
+}
+
+.ut-color-yellow-dark .utah-gov-logo__vert-line {
+	background: #00719E
+}
+
+.ut-color-green-dark .utah-gov-logo__utah {
+	fill: white
+}
+
+.ut-color-green-dark .utah-gov-logo__gov {
+	fill: white
+}
+
+.ut-color-green-dark .utah-gov-logo__vert-line {
+	background: #FAD29A
+}
+
+.ut-color-red-dark .utah-gov-logo__utah {
+	fill: white
+}
+
+.ut-color-red-dark .utah-gov-logo__gov {
+	fill: white
+}
+
+.ut-color-red-dark .utah-gov-logo__vert-line {
+	background: #FAD29A
+}
+
+.ut-color-blue-dark .utah-gov-logo__utah {
+	fill: white
+}
+
+.ut-color-blue-dark .utah-gov-logo__gov {
+	fill: white
+}
+
+.ut-color-blue-dark .utah-gov-logo__vert-line {
+	background: #FAD29A
+}
+
+@media only screen and (max-width: 849px) {
+
+	.utah-gov-logo,
+	.utah-gov-header.ut-size-medium-large>.utah-gov-logo {
+		height: 40px;
+		width: 40px;
+		min-width: 40px;
+		padding: 0 11px
+	}
+
+	.utah-gov-logo svg,
+	.utah-gov-header.ut-size-medium-large>.utah-gov-logo svg {
+		height: 40px;
+		width: 40px
+	}
+}
+
+.utah-gov-header {
+	height: 76px;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	z-index: 1000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	/* background: #F3F3F3; */
+	background: #fff !important;
+	color: #525252;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	line-height: 1.15
+}
+
+.utah-gov-header__logo-title-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 0px;
+	flex: 1 1 0px;
+	height: 100%;
+	overflow: hidden
+}
+
+.utah-gov-header__logo-title-inner-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-decoration: none;
+	height: 100%;
+	overflow: hidden
+}
+
+.utah-gov-header.ut-size-small {
+	height: 34px
+}
+
+.utah-gov-header.ut-size-medium {
+	height: 50px
+}
+
+.utah-gov-header.ut-size-medium-large {
+	height: 64px
+}
+
+.utah-gov-header--sticky {
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+.utah-gov-header--no-shadow {
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.utah-gov-header__placeholder {
+	height: 76px;
+	width: 100%
+}
+
+.utah-gov-header__placeholder.ut-size-small {
+	height: 34px
+}
+
+.utah-gov-header__placeholder.ut-size-medium {
+	height: 50px
+}
+
+.utah-gov-header__placeholder.ut-size-medium-large {
+	height: 64px
+}
+
+.utah-gov-header.ut-color-yellow {
+	background: #fff
+}
+
+.utah-gov-header.ut-color-green {
+	background: #fff
+}
+
+.utah-gov-header.ut-color-red {
+	background: #fff
+}
+
+.utah-gov-header.ut-color-blue {
+	background: #fff
+}
+
+.utah-gov-header.ut-color-dark {
+	background: #393939
+}
+
+.utah-gov-header.ut-color-yellow-dark {
+	background: #293340
+}
+
+.utah-gov-header.ut-color-green-dark {
+	background: #627E79
+}
+
+.utah-gov-header.ut-color-red-dark {
+	background: #9D3C25
+}
+
+.utah-gov-header.ut-color-blue-dark {
+	background: #002E5D
+}
+
+@media only screen and (max-width: 849px) {
+	.utah-gov-header {
+		height: 50px
+	}
+
+	.utah-gov-header.ut-size-medium-large,
+	.utah-gov-header__placeholder,
+	.utah-gov-header__placeholder.ut-size-medium-large {
+		height: 50px
+	}
+}
+
+a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(0, 0, 0, 0.1)
+}
+
+.ut-color-dark a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.ut-color-yellow-dark a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.ut-color-green-dark a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.ut-color-red-dark a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.ut-color-blue-dark a.utah-gov-header__logo-title-inner-wrapper:hover {
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+.utah-gov-header__title-wrapper {
+	font-size: 22px;
+	color: #525252;
+	padding: 0 14px;
+	overflow: hidden;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 0px;
+	flex: 1 1 0px
+}
+
+.utah-gov-header__title-wrapper:visited {
+	color: #525252
+}
+
+@media only screen and (max-width: 849px) {
+	.utah-gov-header__title-wrapper {
+		font-size: 18px;
+		padding: 0 11px
+	}
+}
+
+.ut-size-small .utah-gov-header__title-wrapper {
+	font-size: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 100%;
+	padding: 0 8px;
+	line-height: 1.3
+}
+
+.ut-size-medium .utah-gov-header__title-wrapper {
+	font-size: 18px;
+	padding: 0 11px
+}
+
+.ut-size-medium-large .utah-gov-header__title-wrapper {
+	font-size: 20px;
+	padding: 0 11px
+}
+
+@media only screen and (max-width: 849px) {
+	.ut-size-medium-large .utah-gov-header__title-wrapper {
+		font-size: 18px
+	}
+}
+
+.utah-gov-header__title {
+	white-space: pre-line;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.ut-size-small .utah-gov-header__title {
+	white-space: nowrap
+}
+
+@media only screen and (max-width: 450px) {
+	.utah-gov-header__title {
+		display: none
+	}
+}
+
+.utah-gov-header__short-title {
+	display: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-height: 100%
+}
+
+@media only screen and (max-width: 450px) {
+	.utah-gov-header__short-title {
+		display: block
+	}
+}
+
+.ut-color-yellow .utah-gov-header__title-wrapper {
+	color: #513E33
+}
+
+.ut-color-green .utah-gov-header__title-wrapper {
+	color: #525252
+}
+
+.ut-color-red .utah-gov-header__title-wrapper {
+	color: #525252
+}
+
+.ut-color-blue .utah-gov-header__title-wrapper {
+	color: #525252
+}
+
+.ut-color-dark .utah-gov-header__title-wrapper {
+	color: white
+}
+
+.ut-color-yellow-dark .utah-gov-header__title-wrapper {
+	color: white
+}
+
+.ut-color-green-dark .utah-gov-header__title-wrapper {
+	color: white
+}
+
+.ut-color-red-dark .utah-gov-header__title-wrapper {
+	color: white
+}
+
+.ut-color-blue-dark .utah-gov-header__title-wrapper {
+	color: white
+}
+
+_:-ms-fullscreen,
+:root .utah-gov-header__title-wrapper {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+.utah-gov-header__logo-wrapper {
+	margin: 0 14px
+}
+
+@media only screen and (max-width: 849px) {
+	.utah-gov-header__logo-wrapper {
+		margin: 0 11px
+	}
+}
+
+.ut-size-medium .utah-gov-header__logo-wrapper {
+	margin: 0 11px
+}
+
+.ut-size-small .utah-gov-header__logo-wrapper {
+	margin: 0 8px
+}
+
+.utah-gov-header__logo-wrapper svg,
+.utah-gov-header__logo-wrapper img {
+	max-height: 50px;
+	max-width: 100%;
+	height: 50px
+}
+
+.ut-size-medium-large .utah-gov-header__logo-wrapper svg,
+.ut-size-medium-large .utah-gov-header__logo-wrapper img {
+	max-height: 42px
+}
+
+.ut-size-medium .utah-gov-header__logo-wrapper svg,
+.ut-size-medium .utah-gov-header__logo-wrapper img {
+	max-height: 32px
+}
+
+.ut-size-small .utah-gov-header__logo-wrapper svg,
+.ut-size-small .utah-gov-header__logo-wrapper img {
+	max-height: 24px
+}
+
+@media only screen and (max-width: 849px) {
+
+	.utah-gov-header__logo-wrapper svg,
+	.utah-gov-header__logo-wrapper img {
+		max-height: 32px
+	}
+
+	.ut-size-medium-large .utah-gov-header__logo-wrapper svg,
+	.ut-size-medium-large .utah-gov-header__logo-wrapper img {
+		max-height: 32px
+	}
+}
+
+.utah-gov-header__logo-and-title .utah-gov-header__logo-wrapper {
+	margin-right: 0
+}
+
+.utah-gov-header__action-items-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%
+}
+
+@media only screen and (max-width: 640px) {
+	.utah-gov-header__action-items-wrapper {
+		display: none;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		top: 50px;
+		background-color: #E4E7ED
+	}
+
+	.ut-size-small .utah-gov-header__action-items-wrapper {
+		top: 34px
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.utah-gov-header__action-items-wrapper--visible {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-animation: 300ms ease-in fade-in both;
+		animation: 300ms ease-in fade-in both
+	}
+}
+
+.ut-action-item {
+	height: 100%;
+	max-height: 100%
+}
+
+.ut-action-item__link {
+	height: 100%;
+	max-height: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 11px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	color: #525252;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.ut-action-item__link:visited {
+	color: #525252
+}
+
+.ut-action-item__title {
+	text-align: center;
+	padding: 4px;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	max-width: 120px;
+	overflow: hidden
+}
+
+.ut-action-item:hover .ut-action-item__title,
+.ut-action-item:focus .ut-action-item__title {
+	max-width: none
+}
+
+.ut-action-item--utah-id {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+.ut-action-item--utah-id .ut-action-item__title {
+	white-space: nowrap
+}
+
+.ut-action-item__icon {
+	line-height: 1.5em;
+	height: 32px;
+	width: 32px;
+	text-align: center
+}
+
+@media only screen and (max-width: 849px) {
+	.ut-action-item__icon {
+		height: 28px;
+		width: 28px
+	}
+}
+
+.ut-action-item__icon svg {
+	height: 100%;
+	width: auto
+}
+
+.ut-action-item__icon .svg__line {
+	fill: none;
+	stroke: #525252;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: 1px
+}
+
+.ut-action-item__icon .svg__fill {
+	fill: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-action-item__link {
+		min-width: 50px;
+		min-height: 50px
+	}
+}
+
+@media only screen and (max-width: 849px) {
+	.ut-action-item__link {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row
+	}
+
+	.ut-action-item .svg__line {
+		stroke-width: 1.4px
+	}
+
+	.ut-action-item__title {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		position: absolute;
+		width: 1px
+	}
+
+	.ut-action-item--showing .ut-action-item__title {
+		display: block;
+		clip: unset;
+		height: auto;
+		margin: inherit;
+		overflow: inherit;
+		position: relative;
+		width: auto
+	}
+}
+
+.ut-action-item:hover {
+	background-color: #00719E;
+	color: white
+}
+
+.ut-action-item:hover .ut-action-item__link {
+	color: white
+}
+
+.ut-action-item:hover .ut-action-item__icon .svg__line {
+	stroke: white
+}
+
+.ut-action-item:hover .ut-action-item__icon .svg__fill {
+	fill: white
+}
+
+.ut-size-small .utah-gov-header__action-items-wrapper>.ut-action-item {
+	min-width: 34px;
+	min-height: 34px
+}
+
+.ut-size-medium .utah-gov-header__action-items-wrapper>.ut-action-item {
+	min-width: 50px;
+	min-height: 50px
+}
+
+.ut-size-small .utah-gov-header__action-items-wrapper>.ut-action-item .ut-action-item__link,
+.ut-size-medium .utah-gov-header__action-items-wrapper>.ut-action-item .ut-action-item__link,
+.ut-size-medium-large .utah-gov-header__action-items-wrapper>.ut-action-item .ut-action-item__link {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.ut-size-small .ut-action-item__icon {
+	height: 22px;
+	width: 22px
+}
+
+.ut-size-small .ut-action-item__icon .svg__line {
+	stroke-width: 1.6px
+}
+
+.ut-size-medium .ut-action-item__icon {
+	height: 28px;
+	width: 28px
+}
+
+.ut-size-medium .ut-action-item__icon .svg__line {
+	stroke-width: 1.4px
+}
+
+.ut-size-medium-large .ut-action-item__icon {
+	height: 32px;
+	width: 32px
+}
+
+@media only screen and (max-width: 849px) {
+	.ut-size-medium-large .ut-action-item__icon {
+		height: 28px;
+		width: 28px
+	}
+}
+
+.ut-size-medium-large .ut-action-item__icon .svg__line {
+	stroke-width: 1.2px
+}
+
+.ut-size-small .ut-action-item__title,
+.ut-size-medium .ut-action-item__title,
+.ut-size-medium-large .ut-action-item__title {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px
+}
+
+.ut-size-small .ut-action-item--showing .ut-action-item__title,
+.ut-size-medium .ut-action-item--showing .ut-action-item__title,
+.ut-size-medium-large .ut-action-item--showing .ut-action-item__title {
+	display: block;
+	clip: unset;
+	height: auto;
+	margin: inherit;
+	overflow: inherit;
+	position: relative;
+	width: auto
+}
+
+.ut-color-yellow .ut-action-item {
+	background: #fff;
+	color: #513E33
+}
+
+.ut-color-yellow .ut-action-item__link {
+	color: #513E33
+}
+
+.ut-color-yellow .ut-action-item__link:visited {
+	color: #513E33
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-yellow .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-yellow .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-yellow .ut-action-item .svg__fill {
+	fill: #513E33
+}
+
+.ut-color-yellow .ut-action-item .svg__line {
+	stroke: #513E33
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-yellow .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-yellow .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-yellow .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-yellow .ut-action-item:hover {
+	background-color: #00719E;
+	color: #fff
+}
+
+.ut-color-yellow .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-yellow .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-yellow .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-green .ut-action-item {
+	background: #fff;
+	color: #525252
+}
+
+.ut-color-green .ut-action-item__link {
+	color: #525252
+}
+
+.ut-color-green .ut-action-item__link:visited {
+	color: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-green .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-green .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-green .ut-action-item .svg__fill {
+	fill: #525252
+}
+
+.ut-color-green .ut-action-item .svg__line {
+	stroke: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-green .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-green .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-green .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-green .ut-action-item:hover {
+	background-color: #00719E;
+	color: #fff
+}
+
+.ut-color-green .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-green .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-green .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-red .ut-action-item {
+	background: #fff;
+	color: #525252
+}
+
+.ut-color-red .ut-action-item__link {
+	color: #525252
+}
+
+.ut-color-red .ut-action-item__link:visited {
+	color: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-red .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-red .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-red .ut-action-item .svg__fill {
+	fill: #525252
+}
+
+.ut-color-red .ut-action-item .svg__line {
+	stroke: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-red .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-red .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-red .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-red .ut-action-item:hover {
+	background-color: #00719E;
+	color: #fff
+}
+
+.ut-color-red .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-red .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-red .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-blue .ut-action-item {
+	background: #fff;
+	color: #525252
+}
+
+.ut-color-blue .ut-action-item__link {
+	color: #525252
+}
+
+.ut-color-blue .ut-action-item__link:visited {
+	color: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-blue .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-blue .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-blue .ut-action-item .svg__fill {
+	fill: #525252
+}
+
+.ut-color-blue .ut-action-item .svg__line {
+	stroke: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-blue .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-blue .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-blue .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-blue .ut-action-item:hover {
+	background-color: #00719E;
+	color: #fff
+}
+
+.ut-color-blue .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-blue .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-blue .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-dark .ut-action-item {
+	background: #393939;
+	color: #fff
+}
+
+.ut-color-dark .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-dark .ut-action-item__link:visited {
+	color: #fff
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-dark .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-dark .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-dark .ut-action-item .svg__fill {
+	fill: #fff
+}
+
+.ut-color-dark .ut-action-item .svg__line {
+	stroke: #fff
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-dark .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-dark .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-dark .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-dark .ut-action-item:hover {
+	background-color: #525252;
+	color: #fff
+}
+
+.ut-color-dark .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-dark .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-dark .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-yellow-dark .ut-action-item {
+	background: #293340;
+	color: #ECA400
+}
+
+.ut-color-yellow-dark .ut-action-item__link {
+	color: #ECA400
+}
+
+.ut-color-yellow-dark .ut-action-item__link:visited {
+	color: #ECA400
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-yellow-dark .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-yellow-dark .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-yellow-dark .ut-action-item .svg__fill {
+	fill: #ECA400
+}
+
+.ut-color-yellow-dark .ut-action-item .svg__line {
+	stroke: #ECA400
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-yellow-dark .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-yellow-dark .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-yellow-dark .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-yellow-dark .ut-action-item:hover {
+	background-color: #535B66;
+	color: #fff
+}
+
+.ut-color-yellow-dark .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-yellow-dark .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-yellow-dark .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-green-dark .ut-action-item {
+	background: #627E79;
+	color: #FAD29A
+}
+
+.ut-color-green-dark .ut-action-item__link {
+	color: #FAD29A
+}
+
+.ut-color-green-dark .ut-action-item__link:visited {
+	color: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-green-dark .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-green-dark .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-green-dark .ut-action-item .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-green-dark .ut-action-item .svg__line {
+	stroke: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-green-dark .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-green-dark .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-green-dark .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-green-dark .ut-action-item:hover {
+	background-color: #4E6460;
+	color: #fff
+}
+
+.ut-color-green-dark .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-green-dark .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-green-dark .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-color-red-dark .ut-action-item {
+	background: #9D3C25;
+	color: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item__link {
+	color: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item__link:visited {
+	color: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-red-dark .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-red-dark .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-red-dark .ut-action-item .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item .svg__line {
+	stroke: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-red-dark .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-red-dark .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-red-dark .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-red-dark .ut-action-item:hover {
+	background-color: #7D301D;
+	color: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item:hover .ut-action-item__link {
+	color: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item:hover .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-red-dark .ut-action-item:hover .svg__line {
+	stroke: #FAD29A
+}
+
+.ut-color-blue-dark .ut-action-item {
+	background: #002E5D;
+	color: #FAD29A
+}
+
+.ut-color-blue-dark .ut-action-item__link {
+	color: #FAD29A
+}
+
+.ut-color-blue-dark .ut-action-item__link:visited {
+	color: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-blue-dark .ut-action-item__link {
+		color: #293340
+	}
+
+	.ut-color-blue-dark .ut-action-item__link:visited {
+		color: #293340
+	}
+}
+
+.ut-color-blue-dark .ut-action-item .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-blue-dark .ut-action-item .svg__line {
+	stroke: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-color-blue-dark .ut-action-item {
+		background: #E4E7ED;
+		color: #293340
+	}
+
+	.ut-color-blue-dark .ut-action-item .svg__fill {
+		fill: #293340
+	}
+
+	.ut-color-blue-dark .ut-action-item .svg__line {
+		stroke: #293340
+	}
+}
+
+.ut-color-blue-dark .ut-action-item:hover {
+	background-color: #00719E;
+	color: #fff
+}
+
+.ut-color-blue-dark .ut-action-item:hover .ut-action-item__link {
+	color: #fff
+}
+
+.ut-color-blue-dark .ut-action-item:hover .svg__fill {
+	fill: #fff
+}
+
+.ut-color-blue-dark .ut-action-item:hover .svg__line {
+	stroke: #fff
+}
+
+.ut-menu-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: #393939;
+	fill: currentColor;
+	padding: 14px;
+	text-decoration: none
+}
+
+.ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-menu-item:hover {
+	background: #00719E;
+	color: white !important
+}
+
+.ut-menu-item__icon {
+	width: 14px;
+	height: 14px;
+	margin: 0 8px 0 0
+}
+
+.ut-menu-item__text {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.ut-menu-item__ext .svg {
+	width: 9px;
+	height: 9px;
+	stroke: currentColor;
+	fill: none;
+	stroke-width: 1px
+}
+
+.ut-menu-item__icon.svg img,
+.ut-menu-item__icon.svg svg {
+	height: 14px;
+	width: auto
+}
+
+.ut-color-yellow .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-yellow .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-green .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-green .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-red .ut-menu-item {
+	color: #A6673A
+}
+
+.ut-color-red .ut-menu-item:visited {
+	color: #A6673A
+}
+
+.ut-color-blue .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-blue .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-dark .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-dark .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-yellow-dark .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-yellow-dark .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-green-dark .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-green-dark .ut-menu-item:visited {
+	color: #393939
+}
+
+.ut-color-red-dark .ut-menu-item {
+	color: #A6673A
+}
+
+.ut-color-red-dark .ut-menu-item:visited {
+	color: #A6673A
+}
+
+.ut-color-blue-dark .ut-menu-item {
+	color: #393939
+}
+
+.ut-color-blue-dark .ut-menu-item:visited {
+	color: #393939
+}
+
+.hiveburger-main-menu {
+	position: absolute;
+	top: 76px;
+	overflow-y: hidden;
+	max-width: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	display: none;
+	z-index: 900;
+	line-height: 1.15;
+	background: #F3F3F3;
+	border-bottom-right-radius: 10px
+}
+
+.hiveburger-main-menu.ut-size-medium-large {
+	top: 64px
+}
+
+.hiveburger-main-menu.ut-size-medium {
+	top: 50px
+}
+
+.hiveburger-main-menu.ut-size-small {
+	top: 34px
+}
+
+@media only screen and (max-width: 849px) {
+	.hiveburger-main-menu {
+		top: 50px
+	}
+
+	.hiveburger-main-menu.ut-size-medium-large {
+		top: 50px
+	}
+}
+
+.hiveburger-main-menu--open {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.hiveburger-main-menu--sticky {
+	position: fixed
+}
+
+.hiveburger-main-menu__ut-container {
+	position: absolute;
+	bottom: 20px;
+	width: 240px;
+	max-width: 100%;
+	z-index: 100
+}
+
+.hiveburger-main-menu__ut-menu {
+	background: #D8D8D8;
+	position: relative;
+	width: 240px;
+	min-height: 400px;
+	overflow-y: auto
+}
+
+.hiveburger-main-menu__ut-menu .hive-background {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	fill: #cdcdcd
+}
+
+.hiveburger-main-menu__custom-menu {
+	min-height: 100%;
+	height: 100%;
+	overflow-y: auto;
+	width: 240px;
+	padding-bottom: 20px
+}
+
+.hiveburger-main-menu ul {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.15
+}
+
+.hiveburger-main-menu ul li ul {
+	display: none;
+	padding-left: 8px;
+	font-size: 13px;
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu .ut-menu-item .svg.arrow-icon {
+	height: 14px;
+	width: 14px
+}
+
+.hiveburger-main-menu .ut-menu-item .svg.plus-icon {
+	height: 14px;
+	width: 14px
+}
+
+.hiveburger-main-menu .ut-menu-item--selected>a {
+	color: #00719E
+}
+
+.hiveburger-main-menu .ut-menu-item--selected>a:hover {
+	color: white
+}
+
+.hiveburger-main-menu .ut-menu-item--open .svg.plus-icon .plus-icon__vert {
+	visibility: hidden
+}
+
+.hiveburger-main-menu .ut-menu-item--open ul {
+	display: block
+}
+
+.hiveburger-main-menu .ut-menu-item--open ul .ut-menu-item--selected>a.ut-menu-item {
+	color: #00719E
+}
+
+.hiveburger-main-menu .ut-menu-item--open ul .ut-menu-item:hover {
+	background-color: #D0F2FA;
+	color: #00719E !important
+}
+
+.hiveburger-main-menu .ut-menu-item--closed .svg.plus-icon .plus-icon__vert {
+	visibility: visible
+}
+
+.hiveburger-main-menu .ut-menu-item--closed ul {
+	display: none
+}
+
+.hiveburger-main-menu.ut-color-yellow {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-yellow ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-green {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-green ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-red {
+	background: #FBF7EA
+}
+
+.hiveburger-main-menu.ut-color-red ul li ul {
+	background: #eae6d9
+}
+
+.hiveburger-main-menu.ut-color-blue {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-blue ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-dark {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-dark ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-green-dark {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-green-dark ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-red-dark {
+	background: #FBF7EA
+}
+
+.hiveburger-main-menu.ut-color-red-dark ul li ul {
+	background: #eae6d9
+}
+
+.hiveburger-main-menu.ut-color-blue-dark {
+	background: #F3F3F3
+}
+
+.hiveburger-main-menu.ut-color-blue-dark ul li ul {
+	background: #EAEAEA
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu {
+	background: #D8D8D8
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(173, 173, 176, 0.5)
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #525252
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #00719E
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #336276
+}
+
+.hiveburger-main-menu.ut-color-yellow .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu {
+	background: #D8D8D8
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(173, 173, 176, 0.5)
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #525252
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #00719E
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #336276
+}
+
+.hiveburger-main-menu.ut-color-green .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu {
+	background: #C54C2F
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(114, 34, 15, 0.2)
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #fff
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #9D3C25
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-red .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu {
+	background: #002E5D
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu .hive-background {
+	fill: #0D2332
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #393939 !important;
+	background: #D0F2FA
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu {
+	background: #D8D8D8
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(173, 173, 176, 0.5)
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #525252
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #00719E
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #336276
+}
+
+.hiveburger-main-menu.ut-color-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu {
+	background: #D8D8D8
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(173, 173, 176, 0.5)
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #525252
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #00719E
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #336276
+}
+
+.hiveburger-main-menu.ut-color-yellow-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu {
+	background: #D8D8D8
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(173, 173, 176, 0.5)
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #525252
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #00719E
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #336276
+}
+
+.hiveburger-main-menu.ut-color-green-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #513E33
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu {
+	background: #C54C2F
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu .hive-background {
+	fill: rgba(114, 34, 15, 0.2)
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #fff
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #fff !important;
+	background: #9D3C25
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-red-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu {
+	background: #002E5D
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu .hive-background {
+	fill: #0D2332
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu .ut-menu-item {
+	color: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu .ut-menu-item:hover {
+	color: #393939 !important;
+	background: #D0F2FA
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__utah {
+	fill: #fff
+}
+
+.hiveburger-main-menu.ut-color-blue-dark .hiveburger-main-menu__ut-menu .utah-gov-logo__gov {
+	fill: #fff
+}
+
+.ut-popup__backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 2000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-animation: 300ms ease-in 100ms fade-in both;
+	animation: 300ms ease-in 100ms fade-in both
+}
+
+.ut-popup__backdrop--close {
+	-webkit-animation: 300ms ease-out 100ms fade-out both;
+	animation: 300ms ease-out 100ms fade-out both
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-popup__backdrop {
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: flex-start
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-popup__wrapper {
+		padding-top: 35%
+	}
+}
+
+.ut-search-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch
+}
+
+.ut-search-form input[type=text].ut-search-form__input {
+	background: #393939;
+	color: white;
+	border: 3px solid white;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	height: 44px;
+	width: 50vw;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	padding: 0 0 0 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-search-form input[type=text].ut-search-form__input {
+		width: 70vw
+	}
+}
+
+.ut-search-form__button {
+	background: none;
+	border: none;
+	margin: 0 0 0 -50px;
+	cursor: pointer;
+	padding: 8px
+}
+
+.ut-search-form__button .svg {
+	width: 30px;
+	height: 30px;
+	fill: white;
+	vertical-align: middle
+}
+
+.ut-search-form__button:hover {
+	background: none
+}
+
+.ut-search-form__button:hover .svg {
+	fill: #ccc
+}
+
+.ut-search-form__close {
+	background: #393939;
+	border: 2px solid white;
+	width: 51px;
+	height: 51px;
+	border-radius: 26px;
+	margin: 0 0 0 14px;
+	padding: 0
+}
+
+.ut-search-form__close:hover {
+	background: #525252;
+	cursor: pointer
+}
+
+.ut-search-form__close .svg {
+	width: 30px;
+	stroke: white;
+	stroke-width: 4px;
+	vertical-align: middle
+}
+
+.ut-popup-panel {
+	display: block;
+	position: absolute;
+	z-index: 1200;
+	opacity: 0;
+	-webkit-animation: 300ms ease-in fade-in both;
+	animation: 300ms ease-in fade-in both;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	min-width: 200px;
+	min-height: 44px;
+	max-width: 100vw;
+	top: 0;
+	left: 0;
+	background: #F3F3F3;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-popup-panel {
+		width: 100%
+	}
+}
+
+.ut-popup-panel .arrow-icon {
+	height: 14px;
+	width: 8px
+}
+
+.ut-popup-panel--close {
+	-webkit-animation: 300ms ease-out fade-out both;
+	animation: 300ms ease-out fade-out both
+}
+
+.ut-popup-panel__menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1.15
+}
+
+.ut-popup-panel__menu .ut-menu-item:last-child a {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px
+}
+
+.ut-popup-panel__menu--grid {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 400px;
+	max-width: 420px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.ut-popup-panel__menu--grid li {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 33.33%;
+	flex: 1 1 33.33%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.ut-popup-panel__menu--grid .ut-menu-item {
+	display: block;
+	width: 100%;
+	text-align: center
+}
+
+.ut-popup-panel__menu--grid .ut-menu-item__text {
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	display: block
+}
+
+.ut-popup-panel__menu--grid .ut-menu-item__icon {
+	height: 32px;
+	width: 32px;
+	margin: 0 auto 8px;
+	text-align: center
+}
+
+@media only screen and (max-width: 849px) {
+	.ut-popup-panel__menu--grid .ut-menu-item__icon {
+		height: 28px
+	}
+}
+
+.ut-popup-panel__menu--grid .ut-menu-item__icon svg,
+.ut-popup-panel__menu--grid .ut-menu-item__icon img {
+	height: 32px
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-popup-panel__menu--grid .ut-menu-item {
+		padding: 8px
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-popup-panel__menu--grid {
+		max-width: 100%
+	}
+}
+
+.ut-popup-panel__menu--card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 400px;
+	max-width: 420px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.ut-popup-panel__menu--card li {
+	width: 50%
+}
+
+.ut-popup-panel__menu--card .ut-menu-item {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto
+}
+
+.ut-popup-panel__menu--card .ut-menu-item__icon {
+	height: 28px;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 20%;
+	flex: 1 1 20%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.ut-popup-panel__menu--card .ut-menu-item__icon svg,
+.ut-popup-panel__menu--card .ut-menu-item__icon img {
+	height: 28px
+}
+
+.ut-popup-panel__menu--card .ut-menu-item__text {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 80%;
+	flex: 1 1 80%;
+	padding: 14px 14px 14px 0
+}
+
+.ut-popup-panel__content {
+	color: #333;
+	padding: 8px
+}
+
+.ut-popup-panel.ut-color-yellow {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-green {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-red {
+	background: #FBF7EA
+}
+
+.ut-popup-panel.ut-color-blue {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-dark {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-yellow-dark {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-green-dark {
+	background: #F3F3F3
+}
+
+.ut-popup-panel.ut-color-red-dark {
+	background: #FBF7EA
+}
+
+.ut-popup-panel.ut-color-blue-dark {
+	background: #F3F3F3
+}
+
+.ut-mobile-action-items {
+	height: 100%
+}
+
+.ut-mobile-action-items__icon {
+	min-width: 50px;
+	height: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	display: none
+}
+
+.ut-mobile-action-items__icon .svg__fill {
+	fill: #525252
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-mobile-action-items__icon {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex
+	}
+}
+
+.ut-mobile-action-items__icon svg {
+	height: 40px;
+	width: 40px
+}
+
+.ut-color-yellow .ut-mobile-action-items__icon .svg__fill {
+	fill: #513E33
+}
+
+.ut-color-green .ut-mobile-action-items__icon .svg__fill {
+	fill: #525252
+}
+
+.ut-color-red .ut-mobile-action-items__icon .svg__fill {
+	fill: #525252
+}
+
+.ut-color-blue .ut-mobile-action-items__icon .svg__fill {
+	fill: #525252
+}
+
+.ut-color-dark .ut-mobile-action-items__icon .svg__fill {
+	fill: #fff
+}
+
+.ut-color-yellow-dark .ut-mobile-action-items__icon .svg__fill {
+	fill: #ECA400
+}
+
+.ut-color-green-dark .ut-mobile-action-items__icon .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-red-dark .ut-mobile-action-items__icon .svg__fill {
+	fill: #FAD29A
+}
+
+.ut-color-blue-dark .ut-mobile-action-items__icon .svg__fill {
+	fill: #FAD29A
+}
+
+@media only screen and (max-width: 640px) {
+	.ut-size-small .ut-mobile-action-items__icon {
+		min-width: 40px
+	}
+}
+
+.ut-size-small .ut-mobile-action-items__icon .svg {
+	height: 28px;
+	width: 28px
+}
+
+.ut-size-medium .ut-mobile-action-items__icon .svg,
+.ut-mobile-action-items__icon .ut-size-medium-large .svg {
+	height: 40px;
+	width: 40px
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes fade-out {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
+
+.slide-in {
+	-webkit-animation: slide-in 300ms forwards;
+	animation: slide-in 300ms forwards
+}
+
+.slide-out {
+	-webkit-animation: slide-out 300ms forwards;
+	animation: slide-out 300ms forwards
+}
+
+@-webkit-keyframes slide-in {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%)
+	}
+
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%)
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%)
+	}
+
+	100% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%)
+	}
+}
+
+@-webkit-keyframes slide-out {
+	0% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%)
+	}
+
+	100% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%)
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		-webkit-transform: translateX(0%);
+		transform: translateX(0%)
+	}
+
+	100% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%)
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px
+}
+
+.inner-shadow-top {
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 12px 5px -10px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 12px 5px -10px rgba(0, 0, 0, 0.2) inset
+}
+
+
+/*# sourceMappingURL=utahHeader.css.map*/
