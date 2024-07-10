@@ -1,13 +1,15 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/template-dashboard', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_DASHBOARD_NAME}', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/template-dashboard']
+  args: ['push', 'gcr.io/$PROJECT_ID/${_DASHBOARD_NAME}']
 # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'template-dash', '--image', 'gcr.io/$PROJECT_ID/template-dashboard', '--region', 'us-west1', '--platform', 'managed', '--allow-unauthenticated']
+  args: ['run', 'deploy', 'template-dash', '--image', 'gcr.io/$PROJECT_ID/${_DASHBOARD_NAME}', '--region', 'us-west1', '--platform', 'managed', '--allow-unauthenticated']
+substitutions:
+  _DASHBOARD_NAME : template-dashboard
 images:
-- gcr.io/$PROJECT_ID/template-dashboard
+- gcr.io/$PROJECT_ID/${_DASHBOARD_NAME}
 timeout: 3600s

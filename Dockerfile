@@ -37,9 +37,8 @@ RUN install2.r --error \
 RUN mkdir /root/app
 COPY app /root/app
 
-
 COPY Rprofile.site /usr/local/lib/R/etc/
 
 EXPOSE 3838
 
-CMD ["R", "-q", "-e", "shiny::runApp('/root/app')"]
+CMD ["R", "-q", "-e", "shiny::runApp('/root/app/', port = 3838, host = '0.0.0.0')"]
