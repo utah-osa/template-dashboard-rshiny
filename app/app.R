@@ -5,7 +5,7 @@ library(ragg)
 
 
 library(ggplot2)
-library(plotly)
+# library(plotly)
 library(highcharter)
 
 library(shinyWidgets)
@@ -142,8 +142,8 @@ ui <- fluidPage(
           tags$h5("Highcharter Example"),
           highchartOutput("hco_1"),
           
-          tags$h5("Ggplot + Plotly Example"),
-          plotlyOutput("plo_1")
+          # tags$h5("Ggplot + Plotly Example"),
+          # plotlyOutput("plo_1")
         ), #end col  
         
         div(
@@ -171,13 +171,13 @@ server <- function(input, output) {
     plot(x)
   })
   
-  output$plo_1 <- renderPlotly({
-    
-    gg <- ggplot(cars, aes(x=speed, y=dist)) +
-      geom_point()
-    
-    ggplotly(gg)
-  })
+  # output$plo_1 <- renderPlotly({
+  #   
+  #   gg <- ggplot(cars, aes(x=speed, y=dist)) +
+  #     geom_point()
+  #   
+  #   ggplotly(gg)
+  # })
   
   output$hco_1 <- renderHighchart({
     x <- c(rnorm(10000), rnorm(1000, 4, 0.5))
