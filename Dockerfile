@@ -42,7 +42,7 @@ RUN install2.r --error \
     thematic \ 
     bslib \ 
     ragg \
-    highcharter \ 
+    highcharter \
     plotly
     
 
