@@ -21,6 +21,13 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     libicu-dev \
     libcurl4-openssl-dev \
+    libfreetype6-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libfontconfig1-dev \
+    libfribidi-dev \
+    libharfbuzz-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # install R packages. Below is an example, you will need to modify for your app!
