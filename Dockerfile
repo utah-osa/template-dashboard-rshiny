@@ -31,7 +31,12 @@ RUN install2.r --error \
     bigrquery \
     data.table \
     shinycssloaders \
-    shinyWidgets
+    shinyWidgets \ 
+    thematic \ 
+    bslib \ 
+    ragg \
+    highcharter
+    
 
 # copy the app to the image
 RUN mkdir /root/app
