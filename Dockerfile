@@ -42,8 +42,7 @@ RUN install2.r --error \
     thematic \ 
     bslib \ 
     ragg \
-    highcharter \
-    plotly
+    highcharter 
     
 
 # copy the app to the image
