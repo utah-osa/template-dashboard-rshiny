@@ -58,7 +58,7 @@ ui <- fluidPage(
         div(
           class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 align-self-center py-2 my-2 px-2 mx-2 bg-body-tertiary rounded-3",
           tags$h1(class="display-5 fw-bold",
-                  "Dashboard Title"),
+                  "Dashboard Title - Howdy"),
           p(class="fs-5",
             "Greet the User! This is a short message that explains the dashboard"
           ),
