@@ -27,6 +27,8 @@ RUN apt-get update && apt-get install -y \
     libtiff-dev \
     libfontconfig1-dev \
     libfribidi-dev \
+    libxml2-dev \
+    libglpk-dev \
     libharfbuzz-dev \
     && rm -rf /var/lib/apt/lists/*
 
