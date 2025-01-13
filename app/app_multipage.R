@@ -45,7 +45,11 @@ ui <- fluidPage(
   tags$link(rel = "stylesheet", type = "text/css", href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"),
   
   #add utah header javascript.
+  tags$link(rel = "stylesheet", type = "text/css", href = "https://unpkg.com/@utahdts/utah-design-system-header/dist/style.css"),
+  
+  tags$script(src = "https://unpkg.com/@utahdts/utah-design-system-header/dist/utah-design-system-header.umd.js"),
   tags$script(src = "js/utah_header.js"),
+  
   
   useShinydashboard(),
   
